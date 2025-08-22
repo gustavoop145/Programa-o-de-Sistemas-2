@@ -1,9 +1,8 @@
-package model;
-
-public class AssentoExecutivo extends Assento{
-    private double acrecimo = 0.3;
-    
-    public AssentoExecutivo(String classe, double precoBase){
-        super(classe,)
+class AssentoExecutiva extends Assento {
+    public AssentoExecutiva() {
+        super("Executiva", 1000.00);
+    }
+    public double calcularPrecoFinal() {
+        return precoBase * 1.3;
     }
 }
